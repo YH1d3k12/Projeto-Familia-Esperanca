@@ -1,54 +1,116 @@
-# React + TypeScript + Vite
+# Organização do Projeto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este documento define as boas práticas de código e a organização de pastas da aplicação para manter o projeto limpo, compreensível e padronizado entre todos da equipe.
 
-Currently, two official plugins are available:
+# Boas Práticas de Código
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Última linha em branco
 
-## Expanding the ESLint configuration
+Sempre deixe uma **linha em branco no final dos arquivos**.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Ordem de importações
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+A ordem das importações deve seguir a seguinte hierarquia:
+
+1. **Bibliotecas de terceiros e hooks**
+2. **Serviços (APIs, helpers, configs)**
+3. **Componentes, estilizações e outros**
+
+#### 💡 Exemplo:
+
+```tsx
+// 1.
+import { useState } from 'react';
+import { useAuth } from '@/hooks/useAuth';
+// 2.
+import { api } from '@/services/api';
+// 3.
+import { Button } from '@/components/Button';
+import './style.css';
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Estrutura de um arquivo React
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```tsx
+// 1. Importações.
+import { useEffect } from 'react';
+import './style.css';
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+// 2. Tipagens (se houver).
+type Props = {
+    title: string;
+};
+
+// 3. Componente.
+function Navbar({ title }: Props) {
+    useEffect(() => {
+        console.log('Navbar carregado');
+    }, []);
+
+    return (
+        <nav className="navbar">
+            <h1>{title}</h1>
+        </nav>
+    );
+}
+// 4. Exportação.
+export default Navbar;
 ```
+
+### Estrutura de Pastas
+
+```
+src/
+├── components/
+│   └── Navbar/
+│       ├── index.tsx
+│       └── style.css
+├── pages/
+│   └── Home/
+│       ├── index.tsx
+│       ├── style.css
+│       └── routes.tsx
+├── routes/
+│   ├── lazyRoutes.tsx
+│   └── routes.tsx
+```
+
+#### Components
+
+Cada componente fica em sua própria pasta, com nome capitalizado (Navbar, Sidebar, etc).
+
+Dentro de cada pasta, haverá:
+index.tsx → O código do componente.
+style.css → Estilo específico do componente.
+
+#### Pages
+
+Mesmo padrão do components, porém dedicado a páginas completas.
+
+Cada página possui um arquivo routes.tsx que define as rotas relacionadas àquela página, utilizando carregamento assíncrono (lazy) para otimizar a performance da aplicação.
+
+#### Exemplo
+
+```tsx
+import { lazy } from 'react';
+
+const Home = lazy(() => import('./index'));
+
+const homeRoutes = [{ path: '/home', component: Home }];
+
+export default homeRoutes;
+```
+
+Esse arquivo exporta as rotas da página em formato de array. Ele é importado no routes/lazyRoutes.tsx, que agrupa todas as rotas do projeto:
+
+#### Exemplo
+
+```tsx
+import homeRoutes from '../pages/Home/routes';
+
+const routes = [...homeRoutes];
+
+export default routes;
+```
+
+Em seguida, routes/routes.tsx consome essas rotas e as renderiza no react-router-dom.
