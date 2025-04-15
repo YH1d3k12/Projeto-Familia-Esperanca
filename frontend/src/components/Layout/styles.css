@@ -1,0 +1,21 @@
+.layout {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    color: var(--blue);
+    overflow-y: auto;
+}
+
+.page-screen {
+    padding: 40px 8%;
+    height: calc(100vh - 100px);
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .page-screen {
+        padding: 40px 20px;
+    }
+}

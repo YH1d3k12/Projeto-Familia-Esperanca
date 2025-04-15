@@ -1,3 +1,65 @@
-h1 {
-    font-size: 1.8rem;
+.home {
+    background-color: #000000;
+}
+
+/* ===== HERO ===== */
+.home-hero {
+    width: 100%;
+    height: 100%;
+}
+
+.home-hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+img {
+    min-width: 100px;
+    height: 100%;
+    max-height: 480px;
+    min-width: 220px;
+    width: 100%;
+    max-width: 1024px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
+}
+
+.home-hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+.home-hero-text h1 {
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.home-hero-text h1 span {
+    color: #FFF;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-size: 14rem;
+    line-height: 100px;
+    text-transform: lowercase;
+}
+
+@media screen and (max-width: 480px) {
+    .home-hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .home-hero-text h1 span {
+        font-size: 9.35rem;
+        line-height: 60px;
+    }
 }
