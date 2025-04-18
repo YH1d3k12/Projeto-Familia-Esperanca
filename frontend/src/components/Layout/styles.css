@@ -9,13 +9,25 @@
 }
 
 .page-screen {
-    padding: 40px 8%;
-    height: calc(100vh - 100px);
     width: 100%;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.page-padding {
+    padding: 40px 8%;
 }
 
 @media screen and (max-width: 1024px) {
-    .page-screen {
+    .page-padding {
         padding: 40px 20px;
+    }
+}
+
+@media screen and (max-width: 640px),
+screen and (max-height: 640px) {
+    .page-screen {
+        height: calc(100vh - 60px);
     }
 }

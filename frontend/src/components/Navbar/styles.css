@@ -1,5 +1,7 @@
 .navbar-container {
-    position: relative;
+    position: sticky;
+    top: 0;
+    left: 0;
     padding: 20px;
     height: 100px;
     width: 100%;
@@ -22,8 +24,8 @@
     border-left: 1px solid #FFC642;
     border-bottom: 3px solid #FFC642;
     width: 100%;
-    min-width: 220px;
-    max-width: 400px;
+    min-width: 160px;
+    max-width: 300px;
     background-color: #000000;
 }
 
@@ -36,6 +38,7 @@
 }
 
 .navbar-options li a {
+    width: 100%;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
     font-weight: 700;
@@ -83,4 +86,23 @@
     transform: rotate(-45deg) translateY(-4px) translateX(6px);
     position: relative;
     bottom: 6px;
+}
+
+@media screen and (max-width: 640px),
+screen and (max-height: 640px) {
+    .navbar-container {
+        height: 60px;
+    }
+
+    .navbar-options {
+        top: 60px;
+    }
+
+    .navbar-options li {
+        padding: 8px 16px;
+    }
+
+    .navbar-options li a {
+        font-size: 1.2rem;
+    }
 }
