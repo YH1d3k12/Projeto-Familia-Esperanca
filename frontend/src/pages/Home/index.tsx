@@ -17,6 +17,15 @@ function Home() {
                     </h1>
                 </div>
             </section>
+            <section className="home-mission page-padding">
+                <h3>Nossa missão é...</h3>
+                <p>
+                    <i>
+                        Transformar pessoas comuns em discípulos extraordinários
+                        de Jesus
+                    </i>
+                </p>
+            </section>
         </main>
     );
 }
