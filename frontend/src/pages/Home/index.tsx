@@ -26,6 +26,35 @@ function Home() {
                     </i>
                 </p>
             </section>
+            <section className="home-about page-screen page-padding">
+                <h3>
+                    Nossas
+                    <br />
+                    <strong>Celebrações</strong>
+                </h3>
+                <ul className="home-about-list">
+                    <li>
+                        <strong>Domingo</strong>
+                        <hr />
+                        9h & 18h
+                    </li>
+                    <li>
+                        <strong>Quinta</strong>
+                        <hr />
+                        20h
+                    </li>
+                    <li>
+                        <strong>Shout</strong>
+                        <hr />
+                        Sábado - 18h
+                    </li>
+                    <li>
+                        <strong>Metanoia</strong>
+                        <hr />
+                        Sábado - 19h
+                    </li>
+                </ul>
+            </section>
         </main>
     );
 }

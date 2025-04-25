@@ -88,3 +88,66 @@ screen and (max-height: 640px) {
         height: calc(100vh - 60px);
     }
 }
+
+/* ===== ABOUT ===== */
+.home-about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-color: black;
+    text-align: center;
+}
+
+.home-about h3 {
+    margin-bottom: 20px;
+    color: #FFF;
+    font-family: "League Spartan", sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.home-about h3 strong {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.home-about-list {
+    width: 100%;
+}
+
+.home-about-list li {
+    margin: 10px 0;
+    color: #FFF;
+    font-family: "League Spartan", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.home-about-list li strong {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.home-about-list hr {
+    margin: 5px auto;
+    width: 33%;
+    max-width: 320px;
+    height: 2px;
+    background-color: #FFC642;
+    border: none;
+}
+
+@media screen and (max-height: 640px) {
+    .home-about-list {
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+        width: 100%;
+    }
+
+    .home-about-list hr {
+        width: 120px;
+    }
+}
