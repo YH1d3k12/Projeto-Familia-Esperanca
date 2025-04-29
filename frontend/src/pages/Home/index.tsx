@@ -1,4 +1,7 @@
 import video from '../../assets/video.mp4';
+import A from '../../assets/images/A.jpg';
+import B from '../../assets/images/B.jpg';
+import C from '../../assets/images/C.jpg';
 import './styles.css';
 
 function Home() {
@@ -27,6 +30,9 @@ function Home() {
                 </p>
             </section>
             <section className="home-about page-screen page-padding">
+                <img src={A} className="carousel-image" />
+                <img src={B} className="carousel-image" />
+                <img src={C} className="carousel-image" />
                 <h3>
                     Nossas
                     <br />

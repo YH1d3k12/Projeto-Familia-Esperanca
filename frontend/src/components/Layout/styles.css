@@ -6,12 +6,13 @@
     width: 100vw;
     color: var(--blue);
     overflow-y: auto;
+
+    overflow-x: hidden;
 }
 
 .page-screen {
     width: 100%;
     height: calc(100vh - 70px);
-    overflow: hidden;
 }
 
 .page-padding {
