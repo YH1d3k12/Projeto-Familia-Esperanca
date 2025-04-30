@@ -30,9 +30,11 @@ function Home() {
                 </p>
             </section>
             <section className="home-about page-screen page-padding">
-                <img src={A} className="carousel-image" />
-                <img src={B} className="carousel-image" />
-                <img src={C} className="carousel-image" />
+                <div className="home-about-images-container">
+                    <img src={A} className="home-about-image" />
+                    <img src={B} className="home-about-image" />
+                    <img src={C} className="home-about-image" />
+                </div>
                 <h3>
                     Nossas
                     <br />

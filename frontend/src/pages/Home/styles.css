@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     background-color: black;
+    overflow-y: hidden;
 }
 
 .hero-video {
@@ -70,7 +71,7 @@ screen and (max-height: 640px) {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 480px;
+    height: 420px;
 }
 
 .home-mission h3 {
@@ -85,42 +86,16 @@ screen and (max-height: 640px) {
     font-weight: 500;
 }
 
-@media screen and (max-width: 640px) {
-    .home-mission {
-        height: calc(100vh - 60px);
+@media screen and (max-width: 1536px) {
+    .home-mission p {
+        font-size: 4.2rem;
     }
 }
 
-/* ===== CAROUSEL ===== */
-.carousel {
-    position: relative;
-    height: 80px;
-    width: 100%;
-    z-index: 99;
-}
-
-.carousel-image {
-    position: absolute;
-    border-radius: 15px;
-    width: 33%;
-    height: 400px;
-    object-fit: cover;
-    object-position: top;
-}
-
-.carousel-image:nth-of-type(1) {
-    top: -38%;
-    left: -2%;
-}
-
-.carousel-image:nth-of-type(2) {
-    top: -38%;
-    left: 33.5%;
-}
-
-.carousel-image:nth-of-type(3) {
-    top: -38%;
-    right: -2%;
+@media screen and (max-width: 640px) {
+    .home-mission {
+        height: 380px;
+    }
 }
 
 /* ===== ABOUT ===== */
@@ -132,6 +107,29 @@ screen and (max-height: 640px) {
     justify-content: end;
     background-color: black;
     text-align: center;
+}
+
+/* ===== CAROUSEL ===== */
+.home-about-images-container {
+    position: absolute;
+    top: -22.5%;
+    left: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.home-about-image {
+    border-radius: 15px;
+    min-width: 160px;
+    width: 30%;
+    max-width: 380px;
+    min-height: 120px;
+    max-height: 360px;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
 }
 
 .home-about h3 {
