@@ -1,3 +1,4 @@
+import { FaLongArrowAltRight } from 'react-icons/fa';
 import video from '../../assets/video.mp4';
 import A from '../../assets/images/A.jpg';
 import B from '../../assets/images/B.jpg';
@@ -22,18 +23,34 @@ function Home() {
             </section>
             <section className="home-mission page-padding">
                 <h3>Nossa missão é...</h3>
-                <p>
+                <p className="home-mission-text">
                     <i>
                         Transformar pessoas comuns em discípulos extraordinários
                         de Jesus
                     </i>
                 </p>
+                <div className="home-mission-images-container">
+                    <img src={A} />
+                    <img src={B} />
+                    <img src={C} />
+                </div>
+                <div className="home-mission-tight-images-container">
+                    <div>
+                        <img src={A} id="home-mission-image-a" />
+                        <div className="home-mission-know-us">
+                            <p>Saiba quem somos</p>
+                            <FaLongArrowAltRight className="home-mission-arrow" />
+                        </div>
+                    </div>
+                    <div>
+                        <img src={B} id="home-mission-image-b" />
+                        <img src={C} id="home-mission-image-c" />
+                    </div>
+                </div>
             </section>
             <section className="home-about page-screen page-padding">
-                <div className="home-about-images-container">
-                    <img src={A} className="home-about-image" />
-                    <img src={B} className="home-about-image" />
-                    <img src={C} className="home-about-image" />
+                <div className="home-about-bg-image">
+                    <img src={A} className="" />
                 </div>
                 <h3>
                     Nossas
