@@ -292,11 +292,11 @@ screen and (max-height: 640px) {
 
 .home-about-list hr {
     margin: 5px auto;
+    border: none;
     width: 33%;
     max-width: 320px;
     height: 2px;
     background-color: #FFC642;
-    border: none;
 }
 
 @media screen and (max-height: 640px) {

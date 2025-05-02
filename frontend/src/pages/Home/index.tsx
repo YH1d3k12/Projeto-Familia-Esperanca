@@ -12,7 +12,6 @@ function Home() {
                 <video className="hero-video" autoPlay loop muted playsInline>
                     <source src={video} type="video/mp4" />
                 </video>
-
                 <div className="home-hero-text">
                     <h1>
                         Uma família para
