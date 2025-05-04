@@ -7,7 +7,7 @@ import './styles.css';
 
 function Home() {
     return (
-        <main className="multi-page-container home">
+        <main className="home">
             <section className="home-hero page-screen">
                 <video className="hero-video" autoPlay loop muted playsInline>
                     <source src={video} type="video/mp4" />
