@@ -1,7 +1,7 @@
 import { lazy } from 'react';
 
-const Home = lazy(() => import('./index'));
+const Home = lazy(() => import('./home'));
 
-const homeRoutes = [{ path: '/home', component: Home }];
+const homeRoutes = [{ path: '/', component: Home }];
 
 export default homeRoutes;
