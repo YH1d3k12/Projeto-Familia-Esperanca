@@ -13,16 +13,30 @@ export default function Footer() {
                     <ul>
                         <li>
                             <IoLogoWhatsapp />
-                            (47) 3801-4163
+                            <a
+                                href="https://wa.me/554738014163"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                (47) 3801-4163
+                            </a>
                         </li>
                         <li>
                             <IoMailOutline />
-                            secretaria@familiaesperanca.com.br
+                            <a href="mailto:secretaria@familiaesperanca.com.br">
+                                secretaria@familiaesperanca.com.br
+                            </a>
                         </li>
                         <li>
                             <IoMapOutline />
-                            Família Esperança | Sede: Dona Francisca, 3114 -
-                            Saguaçu
+                            <a
+                                href="https://www.google.com/maps/place/R.+Dona+Francisca,+3114+-+Saguaçu,+Joinville+-+SC,+89221-008"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Família Esperança | Sede: Dona Francisca, 3114 -
+                                Saguaçu
+                            </a>
                         </li>
                     </ul>
                 </div>

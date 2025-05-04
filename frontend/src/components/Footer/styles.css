@@ -30,6 +30,7 @@
 .footer-map iframe {
     width: 100%;
     height: 100%;
+    pointer-events: none;
 }
 
 /* ===== INFO ===== */
@@ -68,11 +69,18 @@
 
 .footer-info ul li {
     margin-top: 10px;
+}
+
+.footer-info ul li a {
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
     font-weight: 500;
-    z-index: 2;
+    vertical-align: middle;
+}
+
+.footer-info ul li a:hover {
+    color: #FFC642;
 }
 
 .footer-info ul li svg {
@@ -123,7 +131,7 @@
 }
 
 @media screen and (max-width: 640px) {
-    .footer-info ul li {
+    .footer-info ul li a {
         font-size: 1rem;
     }
 }
