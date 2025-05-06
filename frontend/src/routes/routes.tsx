@@ -1,4 +1,4 @@
-import { FC, Suspense } from 'react';
+import { FC } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import routes from './lazyRoutes.tsx';
 import Layout from '../components/Layout';
@@ -18,7 +18,7 @@ const LoadRoutes = (routes: RouteConfig[]) => {
 
 export default function AppRoutes() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/Projeto-Familia-Esperanca">
             {/* <Suspense fallback={<LoadingPage />}> </Suspense>*/}
             <Routes>
                 <Route path="/" element={<Layout />}>
