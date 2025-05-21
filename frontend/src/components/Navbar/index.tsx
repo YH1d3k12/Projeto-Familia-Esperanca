@@ -27,7 +27,7 @@ export default function Navbar() {
                 </div>
                 <ul className={`navbar-options ${isOpen ? 'active' : ''}`}>
                     <li>
-                        <Link to={'/home'}>Início</Link>
+                        <Link to={'/'}>Início</Link>
                     </li>
                     <li>
                         <Link to={'/about'}>Quem somos</Link>
