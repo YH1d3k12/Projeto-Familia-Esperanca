@@ -1,10 +1,9 @@
 import { lazy } from 'react';
 
-const Home = lazy(() => import('./donation'));
 const Donate = lazy(() => import('./donation'));
 
 const donationRoutes = [
-    { path: '/', component: Home },
+    { path: '/', component: Donate },
     { path: '/donation', component: Donate },
 ];
 
