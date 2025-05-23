@@ -1,13 +1,18 @@
+import F from '../../assets/images/F.png';
+import I from '../../assets/images/I.png';
 import './styles.css';
 
 function About() {
     return (
         <main className="about">
-            <section className="page-padding">
+            <section className="about-paradigm page-screen page-padding">
+                <div className="about-paradigm-bg-image">
+                    <img src={F} className="" />
+                </div>
                 <h1>
-                    Quem
+                    <span>Quem</span>
                     <br />
-                    somos
+                    <span>Somos</span>
                 </h1>
                 <div>
                     <div>
