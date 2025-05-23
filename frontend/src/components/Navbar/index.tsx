@@ -39,7 +39,7 @@ export default function Navbar() {
                         <Link to={'/donation'}>Contribua</Link>
                     </li>
                     <li>
-                        <Link to={'/ministry'}>Ministérios</Link>
+                        <Link to={'/ministries'}>Ministérios</Link>
                     </li>
                     <li>
                         <Link to={'/cell'}>Nossas Células</Link>

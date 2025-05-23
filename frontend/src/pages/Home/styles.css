@@ -32,7 +32,7 @@
     font-size: 3rem;
     text-transform: uppercase;
     text-align: center;
-    text-shadow: 0 0 10px #FFF, 0 0 20px #fff891, 0 0 40px #fff891, 0 0 80px #fff891;
+    text-shadow: 0 0 10px #FFF, 0 0 20px #eeeeee, 0 0 40px #eeeeee, 0 0 80px #eeeeee;
 }
 
 .home-hero-text h1 span {
@@ -42,7 +42,7 @@
     font-size: 14rem;
     line-height: 100px;
     text-transform: lowercase;
-    text-shadow: 0 0 10px #FFF, 0 0 20px #fff891, 0 0 40px #fff891, 0 0 80px #fff891;
+    text-shadow: 0 0 10px #FFF, 0 0 20px #eeeeee, 0 0 40px #eeeeee, 0 0 80px #eeeeee;
 }
 
 @media screen and (max-width: 640px),
