@@ -1,6 +1,6 @@
 import homeRoutes from '../pages/Home/routes';
-import ministriesRoutes from '../pages/Ministry/routes';
+import ministryRoutes from '../pages/Ministry/routes';
 
-const routes = [...homeRoutes, ...ministriesRoutes];
+const routes = [...homeRoutes, ...ministryRoutes];
 
 export default routes;

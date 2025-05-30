@@ -1,7 +1,7 @@
 import { lazy } from 'react';
 
-const Ministries = lazy(() => import('./ministry'));
+const Ministry = lazy(() => import('./ministry'));
 
-const ministriesRoutes = [{ path: '/ministries', component: Ministries }];
+const ministryRoutes = [{ path: '/ministry', component: Ministry }];
 
-export default ministriesRoutes;
+export default ministryRoutes;
