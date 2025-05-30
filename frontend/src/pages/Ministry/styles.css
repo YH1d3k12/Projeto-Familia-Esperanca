@@ -1,82 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=League+Spartan:wght@400;700&display=swap');
-
-.ministries {
+.ministry {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem 2rem 0 2rem;
+    min-height: auto;
     background: linear-gradient(to bottom, #dce1e5, #075264);
     color: white;
     font-family: 'League Spartan', sans-serif;
-    min-height: auto;
 }
 
-.title {
-    font-size: clamp(2rem, 5vw, 5rem);
-    font-weight: bold;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-}
-
-.content {
-    margin-top: 50px;
+.ministry-content {
     display: flex;
     align-items: center;
     gap: 6rem;
+    margin-top: 50px;
     border-radius: 12px;
 }
 
-.image {
-    max-height: 690px;
+.ministry-image {
     border-radius: 30px;
+    max-height: 690px;
     object-fit: cover;
 }
 
-.text-content {
+.ministry-text-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* distribui o conteúdo verticalmente */
-    text-align: center;
-    height: 95%; /* ajuste conforme necessário */
+    justify-content: space-between;
     max-width: 500px;
+    height: 95%;
+    text-align: center;
 }
 
-.verse {
+.ministry-text-content h2 {
+    margin-bottom: 2rem;
+    font-size: clamp(2rem, 5vw, 5rem);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ministry-text-content p {
+    margin-bottom: 0.5rem;
     font-family: 'Antic Didone', serif;
     font-size: clamp(2rem, 6vw, 5.5rem);
     font-style: italic;
-    margin-bottom: 0.5rem;
 }
 
-.reference {
+.ministry-text-content span {
     font-size: clamp(1rem, 3vw, 2.5rem);
     font-weight: bold;
 }
 
-/*Ministérios*/
-
-.ministerios-list {
-    margin-top: 4rem;
+.ministries-list {
     display: flex;
     flex-direction: column;
+    margin-top: 4rem;
     width: 100%;
 }
 
-.ministerio-card {
+.ministry-card {
     padding: 1.5rem;
     border-bottom: 2px solid rgba(0, 0, 0);
 }
 
-.ministerio-card h3 {
+.ministry-card h3 {
+    margin-bottom: 0.5rem;
     font-size: clamp(0.7rem, 2.7vw, 2.2rem);
     font-family: 'League Spartan', sans-serif;
-    margin-bottom: 0.5rem;
 }
 
-.ministerio-card p {
+.ministry-card p {
     font-size: clamp(0.5rem, 2.5vw, 2.0rem);
 }
 
-.ministerio-card:last-child {
+.ministry-card:last-child {
     border-bottom: none;
 }
