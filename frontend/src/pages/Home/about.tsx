@@ -14,8 +14,8 @@ function About() {
                     <br />
                     <span>Somos</span>
                 </h1>
-                <div>
-                    <div>
+                <div className="about-paradigm-text-container">
+                    <div className="about-paradigm-text-box">
                         <h3>Missão</h3>
                         <p>
                             Ser uma igreja família, que transforma pessoas
@@ -23,11 +23,11 @@ function About() {
                             sejam frutíferos em todas as áreas.
                         </p>
                     </div>
-                    <div>
+                    <div className="about-paradigm-text-box">
                         <h3>Visão</h3>
                         <p>Ganhar o perdido a qualquer custo.</p>
                     </div>
-                    <div>
+                    <div className="about-paradigm-text-box">
                         <h3>Valores</h3>
                         <p>
                             Família, honra, amor, generosidade, excelência,
@@ -36,11 +36,17 @@ function About() {
                     </div>
                 </div>
             </section>
-            <section>
+            <section className="about-pastor page-screen page-padding">
+                <div className="about-pastor-bg-image">
+                    <img src={I} className="" />
+                </div>
                 <h2>Nossos pastores</h2>
                 <h3>Daniela Pardini</h3>
             </section>
-            <section>
+            <section className="about-pastor page-screen page-padding">
+                <div className="about-pastor-bg-image">
+                    <img src={F} className="" />
+                </div>
                 <h3>Felipe Pardini</h3>
             </section>
             <section>
