@@ -72,7 +72,7 @@ function Donate() {
         </button>
       </div>
       <div className='bloquinhuu'>
-        <h2>“O generoso prosperará; quem dá alívio aos outros, alívio receberá.”</h2>
+        <h2 className='texto-verse'>“O generoso prosperará; quem dá alívio aos outros, alívio receberá.”</h2>
         <p className="verse">Provérbios 11:25</p>
       </div>
     </main>

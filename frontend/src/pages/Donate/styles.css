@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
 
 h1 {
@@ -27,6 +27,7 @@ h1 {
   border-radius: 0.9rem;
   width: 100%;
   max-width: 600px;
+  box-sizing: border-box;
 }
 
 .donate-button {
@@ -34,13 +35,12 @@ h1 {
   padding: 12px 24px;
   font-size: 1.5rem;
   background-color: #f2f2e6ff;
-  /* color: white; */
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   border: #000 solid 2px;
-  }
+}
 
 p {
   font-size: 2.25rem;
@@ -53,7 +53,6 @@ p {
   font-size: 2rem;
 }
 
-
 .copy-icon-button {
   margin-left: 10px;
   background: none;
@@ -64,12 +63,12 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 28px; /* aumenta o ícone */
+  font-size: 28px;
   padding: 0;
 }
 
 .donate-icon {
-  font-size: 2rem; /* ou o tamanho que quiser */
+  font-size: 2rem;
   margin-right: 10px;
   color: black;
   vertical-align: middle;
@@ -78,7 +77,7 @@ p {
 .pix-message {
   margin-top: 10px;
   padding: 12px 20px;
-  background-color: #001c5cff; /* azul */
+  background-color: #001c5cff;
   border: 2px;
   color: white;
   font-size: 1.8rem;
@@ -89,73 +88,76 @@ p {
   text-align: center;
 }
 
-.h2 {
-  font-size: 10rem;
+.texto-verse {
+  margin-top: 1.5rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #ffffff;
   margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.verse {
+  margin-top: 1.5rem;
+  text-align: right;
+  font-size: 1.8rem;
+  color: #ffffff;
 }
 
 .bloquinhuu {
-
-  border: 2px solid rgb(255, 0, 0);
+  border: 2px solid #992900ff;
   padding: 5rem;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   border-top-left-radius: 0;
   border-bottom-right-radius: 0;
-  
-  width: 100%;          
-  max-width: 600px;    
-  margin: 1rem auto;    
-  box-sizing: border-box; 
-
+  width: 100%;
+  max-width: 600px;
+  margin: 3rem auto;
+  box-sizing: border-box;
 }
 
-/* 
-h1 {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-}
-
-.donate-button:hover {
-  background-color: #bb5102;
-} */
-
-/* RESPONSIVIDADE */
-/* 
-@media (max-width: 768px) {
-  .donate {
-    padding: 1rem;
-    font-size: 2rem;
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3.2rem;
   }
 
-  h1 {
-    font-size: 3.5rem;
+  p {
+    font-size: 1.8rem;
   }
 
   .container {
-    padding: 30px;
-    font-size: 1.5rem;
-    width: 90%;
+    padding: 15px;
+    font-size: 1.8rem;
   }
 
   .donate-button {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding: 10px 20px;
   }
+
+  .copy-icon-button {
+    font-size: 24px;
+  }
+
+  .donate-icon {
+    font-size: 1.8rem;
+  }
+
+  .pix-message {
+    font-size: 1.6rem;
+    padding: 10px 15px;
+  }
+
+  .texto-verse {
+    font-size: 1.9rem;
+  }
+
+  .verse {
+    font-size: 1.5rem;
+  }
+
+  .bloquinhuu {
+    padding: 2rem;
+  }
 }
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  .container {
-    padding: 20px;
-    font-size: 1.2rem;
-  }
-
-  .donate-button {
-    font-size: 1rem;
-    padding: 8px 16px;
-  }
-} */
