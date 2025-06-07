@@ -13,3 +13,13 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+}

@@ -13,7 +13,7 @@ function Donate() {
         Sua contribuição nos ajuda a manter nossas atividades, projetos sociais e infraestrutura.
       </p>
       {/* aqui você pode adicionar botões, formulários ou links de pagamento */}
-      <button className="donate-button">Quero doar</button>
+      <button className="donate-button">COPIAR O PIX</button>
     </main>
   );
 }
