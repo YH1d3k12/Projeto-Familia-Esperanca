@@ -19,6 +19,7 @@ h1 {
 }
 
 .container {
+  margin-top: 20px;
   color: #000;
   padding: 20px;
   background-color: #f2f2e6ff;
@@ -32,22 +33,87 @@ h1 {
   margin-top: 20px;
   padding: 12px 24px;
   font-size: 1.5rem;
-  background-color: #9E3E01;
-  color: white;
+  background-color: #f2f2e6ff;
+  /* color: white; */
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-/* 
-h1 {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-}
+  border: #000 solid 2px;
+  }
 
 p {
   font-size: 2.25rem;
   margin-bottom: 1.5rem;
+}
+
+.pix-icon {
+  margin-right: 10px;
+  color: #000000;
+  font-size: 2rem;
+}
+
+
+.copy-icon-button {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px; /* aumenta o ícone */
+  padding: 0;
+}
+
+.donate-icon {
+  font-size: 2rem; /* ou o tamanho que quiser */
+  margin-right: 10px;
+  color: black;
+  vertical-align: middle;
+}
+
+.pix-message {
+  margin-top: 10px;
+  padding: 12px 20px;
+  background-color: #001c5cff; /* azul */
+  border: 2px;
+  color: white;
+  font-size: 1.8rem;
+  border-radius: 8px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.h2 {
+  font-size: 10rem;
+  margin-bottom: 1rem;
+}
+
+.bloquinhuu {
+
+  border: 2px solid rgb(255, 0, 0);
+  padding: 5rem;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  
+  width: 100%;          
+  max-width: 600px;    
+  margin: 1rem auto;    
+  box-sizing: border-box; 
+
+}
+
+/* 
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
 }
 
 .donate-button:hover {
